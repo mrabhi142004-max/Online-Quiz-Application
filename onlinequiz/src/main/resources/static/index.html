@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+    <div class="quiz-container">
+
+        <div class="header">
+            <div class="logo">Q</div>
+            <span>QUIZ MASTER</span>
+        </div>
+
+        <div class="hero">
+            <span class="tag">✦ TEST YOUR KNOWLEDGE</span>
+            <h1>Online Quiz <span>Application</span></h1>
+            <p>Challenge yourself, learn something new and improve your skills.</p>
+        </div>
+
+        <div class="category-section">
+            <label for="categorySelect">Choose Your Category</label>
+
+            <div class="select-wrapper">
+                <select id="categorySelect">
+                    <option value="Java">☕ Java</option>
+                    <option value="Python">🐍 Python</option>
+                    <option value="DBMS">🗄️ DBMS</option>
+                    <option value="DSA">💻 DSA</option>
+                    <option value="Aptitude">🧠 Aptitude</option>
+                </select>
+            </div>
+
+            <button type="button" id="loadCategoryBtn">
+                Start Quiz <span>→</span>
+            </button>
+        </div>
+
+        <p id="status">Select a category to begin your quiz.</p>
+
+        <form id="quizForm">
+            <div id="questions"></div>
+
+            <button type="submit" id="submitBtn">
+                Submit Answers →
+            </button>
+        </form>
+
+        <div id="result"></div>
+
+        <button id="restartBtn" onclick="restartQuiz()">
+            ↻ Restart Quiz
+        </button>
+
+        <div class="footer">
+            Made with ❤️ for learning
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Online Quiz Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <h1>Online Quiz Application</h1>
+
+        <p id="status">Loading questions...</p>
+
+        
+<div class="category-section">
+    <h3>Select Quiz Category</h3>
+
+    <select id="categorySelect">
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="DBMS">DBMS</option>
+        <option value="DSA">DSA</option>
+        <option value="Aptitude">Aptitude</option>
+    </select>
+
+    <button type="button" id="loadCategoryBtn">
+        Start Quiz
+    </button>
+</div>
+
+
+        <form id="quizForm">
+            <div id="questions"></div>
+
+            <button type="submit" id="submitBtn">
+                Submit Quiz
+            </button>
+        </form>
+
+        <div id="result"></div>
+
+        <button id="restartBtn" onclick="restartQuiz()">
+            Restart Quiz
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html> -->
